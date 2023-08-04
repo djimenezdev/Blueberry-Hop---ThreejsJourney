@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ivory;
+}
+
+/* Interface */
+
+.interface {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    font-family: 'Bebas Neue', sans-serif;
+    user-select:none;
+}
+
+.time {
+    position:absolute;
+    top:15%;
+    width:100%;
+    color:#ffffff;
+    font-size: 6vh;
+    background:#00000033;
+    text-align:center;
+    padding-top:5px;
+}
+
+.restart, .start {
+    display:flex;
+    justify-content:center;
+    position:absolute;
+    left:0;
+    width:100%;
+    color:#fff;
+    font-size:80px;
+    background:#00000033;
+    padding-top:10px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.restart {
+    top:40%;
+}
+
+.start {
+    top:55%;
+}
+
+/**
+ * Controls
+ */
+.controls
+{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+}
+
+.controls .raw
+{
+    display: flex;
+    justify-content: center;
+}
+
+.controls .key
+{
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    border: 2px solid #ffffff;
+    background: #ffffff44;
+}
+
+.controls .key.large
+{
+    width: 144px;
+}
+
+.controls .key.active
+{
+    background: #ffffff99;
+}
+
+.customize {
+    position:absolute;
+    bottom: 20px;
+    right:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customize.key {
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+    border: 2px solid #ffffff;
+    background: #ffffff96;
+}
+
+.customize img {
+    width:50px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.colorCustomizer {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:60%;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:32px;
+}
+
+.colorOption {
+    width: 28px;
+    height:28px;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    border:none;
+    background:#fff;
+    padding:2px;
+}
+
+.colorOption:hover {
+    background: transparent;
+}
+
+.colorOption.active {
+    background:transparent;
+}
+
+.colorOption .red {
+    background: red;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.colorOption .turquoise {
+    background: turquoise;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.colorOption .mediumpurple {
+    background: mediumpurple;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.colorOption .limegreen {
+    background: limegreen;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.colorOption .yellow {
+    background: yellow;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
